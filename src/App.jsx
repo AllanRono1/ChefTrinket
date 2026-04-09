@@ -7,6 +7,12 @@ function App() {
   return (
     <>
       <Header />
+      <main>
+        <div className='input-container'>
+          <input type="text" />
+          <button>Add ingredient</button>
+        </div>
+      </main>
     </>
   )
 }
