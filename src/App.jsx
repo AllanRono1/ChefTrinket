@@ -10,8 +10,7 @@ function App() {
   return (
     <>
       <header>
-        <div className='header-img'>
-        </div>
+        <div className='header-img'></div>
         <h1>Chef Trinket</h1>
       </header>
     </>

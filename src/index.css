@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+}
+
+main {
+  background-color: #F5F2EE;
+}
+
+h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+}
