@@ -29,6 +29,7 @@ header {
   width: 60%;
   margin-right: 0.5rem;
   font-family: "inter";
+  font-size: 100%;
 }
 
 .input-container > button {
