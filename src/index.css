@@ -13,4 +13,5 @@ h1 {
 main {
   max-width: 70%;
   margin: 0 auto;
+  font-family: "inter", sans-serif;
 }
