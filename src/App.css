@@ -9,6 +9,18 @@ header {
   background-color: #fcfcfc;
 }
 
+h1 {
+  font-family: "Datatype", monospace;
+}
+
+h1::before {
+  content: "👩‍🍳";
+}
+
+h1::after {
+  content: "🍝";
+}
+
 .header-img {
   background-image: url('./assets/bear.png');
   width: 50px;

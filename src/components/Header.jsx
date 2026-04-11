@@ -2,8 +2,7 @@ function Header() {
     return(
         
         <header>
-            <div className='header-img'></div>
-            <h1>Chef Trinket</h1>
+            <h1>Secret Chef</h1>
       </header>
     )
 }

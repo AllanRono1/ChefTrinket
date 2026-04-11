@@ -15,20 +15,16 @@ function App() {
     setNewItem()
   }
 
-  function handleClick(event) {
-    event.preventDefault()
-    const formEl = event.currentTarget
-    const formData = new FormData(formEl)
+  function postIngredient(formData) {
     const input = formData.get('input')
     console.log(input)
-    formEl.reset()
   }
 
   return (
     <>
       <Header />
       <main>
-        <form onSubmit={handleClick} method="POST" className='input-container'>
+        <form action={postIngredient} className='input-container'>
           <input type="text"
           placeholder='eg. basil'
           name='input'/>
