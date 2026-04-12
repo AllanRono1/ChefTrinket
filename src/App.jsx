@@ -29,6 +29,10 @@ function App() {
         <ul>
           {list}
         </ul>
+        <div className='generate'>
+          <p>Whip up your next meal</p>
+          <button>Get a recipe</button>
+        </div>
       </main>
     </>
   )
