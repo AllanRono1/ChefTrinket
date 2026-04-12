@@ -5,19 +5,15 @@ import './App.css'
 
 function App() {
 
-  const [ingredientsList, setIngredientsList] = React.useState(["oregano", "thyme", "seasoning"])
-  const list = ingredientsList.map((item) => {
-    return <li>{item}</li>
+  const [ingredients, setIngredients] = React.useState([])
+  const list = ingredients.map((ingredient) => {
+    return <li key={ingredient}>{ingredient}</li>
   })
-
-  function addIngredient() {
-    setIngredientsList([...ingredientsList], newItem)
-    setNewItem()
-  }
 
   function postIngredient(formData) {
     const input = formData.get('input')
     console.log(input)
+    setIngredients(prevIngredients => [...prevIngredients, input])
   }
 
   return (

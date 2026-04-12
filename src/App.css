@@ -38,19 +38,19 @@ h1::after {
 
 .input-container > input {
   padding: 10px;
-  width: 60%;
   margin-right: 0.5rem;
   font-family: "inter";
   font-size: 100%;
+  flex: 2;
 }
 
 .input-container > button {
   padding: 10px;
-  width: 20%;
   background-color: black;
   color: white;
   font-family: "inter";
   font-size: 100%;
+  flex: 1;
 }
 
 button::before {
