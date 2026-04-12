@@ -53,6 +53,10 @@ h1::after {
   flex: 1;
 }
 
+.input-container > button:hover::before {
+  color: black;
+}
+
 .input-container > button::before {
   content: "+";
   color: white;
@@ -71,7 +75,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   min-height: 80px;
-  border: 2px solid white;
+  border: 2px solid #fcfcfc;
   background-color: #d3cac3;
   margin-top: 120px;
   align-items: center;
@@ -91,4 +95,11 @@ button:hover {
 .generate > button:hover {
   color: #2c2c22;
   background-color: #ff5710;
+}
+
+.generate > p {
+  font-family: "Permanent Marker", cursive;
+  color: #ff5710;
+  font-size: 120%;
+  margin-right: 10px;
 }
