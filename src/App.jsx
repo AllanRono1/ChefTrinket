@@ -28,6 +28,7 @@ function App() {
             name='input'/>
             <button>Add ingredient</button>
           </form>
+          {ingredients.length < 4 &&<p className='prerequisite'>Add atleast 4 ingredients</p>}
           <ul>
             {list}
           </ul>

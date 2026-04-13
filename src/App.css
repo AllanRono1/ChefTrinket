@@ -109,3 +109,13 @@ button:hover {
 .generate > p::after {
   content: "😋";
 }
+
+.prerequisite {
+  font-size: 100%;
+  color:#1c1c1c80;
+}
+
+.prerequisite::selection {
+  background-color:#1c1c1c80;
+  color: #fcfcfc;
+}
