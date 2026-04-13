@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import React from 'react'
 import Header from './components/Header'
+import Generate from './components/Generate'
 import './App.css'
 
 function App() {
@@ -20,19 +21,18 @@ function App() {
     <>
       <Header />
       <main>
-        <form action={postIngredient} className='input-container'>
-          <input type="text"
-          placeholder='eg. basil'
-          name='input'/>
-          <button>Add ingredient</button>
-        </form>
-        <ul>
-          {list}
-        </ul>
-        <div className='generate'>
-          <p>Whip up your next meal</p>
-          <button>Get a recipe</button>
-        </div>
+        <section>
+          <form action={postIngredient} className='input-container'>
+            <input type="text"
+            placeholder='eg. basil'
+            name='input'/>
+            <button>Add ingredient</button>
+          </form>
+          <ul>
+            {list}
+          </ul>
+        </section>
+        {ingredients.length > 3 && <Generate />}
       </main>
     </>
   )

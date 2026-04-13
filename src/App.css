@@ -84,6 +84,8 @@ button:hover {
 }
 
 .generate > button {
+  display: flex;
+  flex: 1px 50px;
   background-color: #fcfcfc;
   color: #2c2c22;
   font-size: 100%;
@@ -102,4 +104,8 @@ button:hover {
   color: #ff5710;
   font-size: 120%;
   margin-right: 10px;
+}
+
+.generate > p::after {
+  content: "😋";
 }
