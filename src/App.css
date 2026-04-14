@@ -9,15 +9,15 @@ header {
   background-color: #fcfcfc;
 }
 
-h1 {
+header > h1 {
   font-family: "Datatype", monospace;
 }
 
-h1::before {
+header > h1::before {
   content: "👩‍🍳";
 }
 
-h1::after {
+header > h1::after {
   content: "🍝";
 }
 
@@ -118,4 +118,18 @@ button:hover {
 .prerequisite::selection {
   background-color:#1c1c1c80;
   color: #fcfcfc;
+}
+
+.recipe-title {
+  color: #1c1c1c90;
+  text-align: center;
+}
+
+h1 > p::first-line {
+  background-color: red;
+}
+
+.recipe-title + p::first-line {
+  font-size: 110%;
+  text-decoration:underline;
 }

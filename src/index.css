@@ -8,11 +8,11 @@ html {
 }
 
 
-h1 {
+/* header > h1 {
   font-family: "Cormorant Garamond", serif;
   font-optical-sizing: auto;
   font-weight: 600;
-}
+} */
 
 main {
   max-width: 70%;
