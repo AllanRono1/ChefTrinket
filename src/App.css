@@ -107,7 +107,7 @@ button:hover {
 }
 
 .generate > p::after {
-  content: "😋";
+  content: "😋👉";
 }
 
 .prerequisite {
@@ -132,4 +132,9 @@ h1 > p::first-line {
 .recipe-title + p::first-line {
   font-size: 110%;
   text-decoration:underline;
+}
+
+.ingredients-header {
+  font-size: 115%;
+  font-weight: 600;
 }
