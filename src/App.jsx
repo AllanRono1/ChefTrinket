@@ -38,7 +38,7 @@ function App() {
           <section>
           {ingredients.length < 4 &&<p className='prerequisite'>Add atleast 4 ingredients</p>}
           {ingredients.length > 0 && <h1 className='ingredients-header'>Your list of ingredients:</h1>}
-          <ul>
+          <ul className='parent-list'>
             {list}
           </ul>
           {ingredients.length > 3 && <div className='generate'>

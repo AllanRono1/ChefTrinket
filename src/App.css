@@ -138,3 +138,9 @@ h1 > p::first-line {
   font-size: 115%;
   font-weight: 600;
 }
+
+.parent-list > li {
+  margin-bottom: 5px;
+  color: #1c1c1c90 ;
+  font-size: 100%;
+}
