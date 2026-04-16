@@ -36,10 +36,10 @@ function App() {
           <ul>
             {list}
           </ul>
-          <div className='generate'>
+          {ingredients.length > 3 && <div className='generate'>
             <p>Whip up your next meal</p>
             <button>Get a recipe</button>
-          </div>
+          </div>}
         </section>
         <section>
           <h1 className='recipe-title'>Your recipe:</h1>
