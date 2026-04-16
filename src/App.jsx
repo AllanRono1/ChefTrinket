@@ -18,6 +18,11 @@ function App() {
     setIngredients(prevIngredients => [...prevIngredients, input])
   }
 
+  const [showRecipe, setShowRecipe] = React.useState(false)
+
+  function toggleRecipe(){
+    setShowRecipe(prevRecipe => !prevRecipe)
+  }
   return (
     <>
       <Header />
@@ -38,10 +43,10 @@ function App() {
           </ul>
           {ingredients.length > 3 && <div className='generate'>
             <p>Whip up your next meal</p>
-            <button>Get a recipe</button>
+            <button onClick={toggleRecipe}>Get a recipe</button>
           </div>}
         </section>
-        <section>
+        {showRecipe ? <section>
           <h1 className='recipe-title'>Your recipe:</h1>
           <p>Prepare the Chicken: Season the chicken pieces with salt, pepper, turmeric, and half of the paprika.
             Sear the Chicken: Heat olive oil/ghee in a large pot or Dutch oven over medium-high heat. Sear the chicken until golden brown (about 3-4 minutes per side). Remove chicken from the pot and set aside (it does not need to be fully cooked).
@@ -51,7 +56,7 @@ function App() {
             Add Rice: Stir in the washed rice, ensuring it is submerged in the liquid. Cover tightly and simmer for another 15-20 minutes, or until the rice is fluffy, potatoes are tender, and chicken is cooked through.
             Finish: If the stew is too thin, simmer uncovered for 5 more minutes. If too thick, add a splash of broth. Taste and adjust salt/chilli.
             Serve: Garnish with fresh cilantro and serve hot.</p>
-        </section>
+        </section> : null}
       </main>
     </>
   )
